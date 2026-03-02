@@ -1,0 +1,167 @@
+Command: D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP_IDF_PROJECT\button_queue_led\build\button_queue_led.elf D:\ESP_IDF_PROJECT\button_queue_led\build\bootloader\bootloader.elf --force-color -m 'D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools\idf.py' '-p' 'COM5'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 25 2026 11:05:50[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a12ch ( 41260) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001a154 vaddr=3ffb0000 size=02400h (  9216) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001c55c vaddr=40080000 size=03abch ( 15036) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=105e0h ( 67040) map[0m
+[0;32mI (136) esp_image: segment 4: paddr=00030608 vaddr=40083abc size=098b4h ( 39092) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00039ec4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     button_queue_led[0m
+[0;32mI (188) app_init: App version:      d0df264-dirty[0m
+[0;32mI (193) app_init: Compile time:     Feb 25 2026 11:05:36[0m
+[0;32mI (198) app_init: ELF file SHA256:  30944c496...[0m
+[0;32mI (202) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (215) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (219) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (225) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFB2CC8 len 0002D338 (180 KiB): DRAM[0m
+[0;32mI (235) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (246) heap_init: At 4008D370 len 00012C90 (75 KiB): IRAM[0m
+[0;33mW (253) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (284) main_task: Started on CPU0[0m
+[0;32mI (294) main_task: Calling app_main()[0m
+[0;32mI (294) main_task: Returned from app_main()[0m
+����������������������������������������������������������������1544) BUTTON EVENT: Button pressed: 1
+[0;32mI (533344) BUTTON EVENT: Button pressed: 2[0m
+[0;32mI (535304) BUTTON EVENT: Button pressed: 3[0m
+[0;32mI (537034) BUTTON EVENT: Button pressed: 4[0m
+����������������������������������������������������������������538564) BUTTON EVENT: Button pressed: 5
+[0;33mW (538564) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (541284) BUTTON EVENT: Button pressed: 6[0m
+[0;32mI (543084) BUTTON EVENT: Button pressed: 7[0m
+[0;32mI (544634) BUTTON EVENT: Button pressed: 8[0m
+[0;32mI (546184) BUTTON EVENT: Button pressed: 9[0m
+[0;32mI (546394) BUTTON EVENT: Button pressed: 10[0m
+[0;33mW (546394) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (548664) BUTTON EVENT: Button pressed: 11[0m
+[0;32mI (549994) BUTTON EVENT: Button pressed: 12[0m
+[0;32mI (549994) BUTTON EVENT: Button pressed: 13[0m
+[0;32mI (550004) BUTTON EVENT: Button pressed: 14[0m
+[0;32mI (550004) BUTTON EVENT: Button pressed: 15[0m
+[0;33mW (550004) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (551004) BUTTON EVENT: Button pressed: 16[0m
+[0;32mI (552674) BUTTON EVENT: Button pressed: 17[0m
+[0;32mI (554434) BUTTON EVENT: Button pressed: 18[0m
+[0;32mI (555854) BUTTON EVENT: Button pressed: 19[0m
+[0;32mI (557384) BUTTON EVENT: Button pressed: 20[0m
+[0;33mW (557384) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (558804) BUTTON EVENT: Button pressed: 21[0m
+[0;32mI (560134) BUTTON EVENT: Button pressed: 22[0m
+[0;32mI (560264) BUTTON EVENT: Button pressed: 23[0m
+[0;32mI (561524) BUTTON EVENT: Button pressed: 24[0m
+[0;32mI (561634) BUTTON EVENT: Button pressed: 25[0m
+[0;33mW (561634) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (562724) BUTTON EVENT: Button pressed: 26[0m
+[0;32mI (562724) BUTTON EVENT: Button pressed: 27[0m
+[0;32mI (562824) BUTTON EVENT: Button pressed: 28[0m
+[0;32mI (562824) BUTTON EVENT: Button pressed: 29[0m
+[0;32mI (562824) BUTTON EVENT: Button pressed: 30[0m
+[0;33mW (562824) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (563824) BUTTON EVENT: Button pressed: 31[0m
+[0;32mI (563824) BUTTON EVENT: Button pressed: 32[0m
+[0;32mI (567474) BUTTON EVENT: Button pressed: 33[0m
+[0;32mI (569494) BUTTON EVENT: Button pressed: 34[0m
+[0;32mI (571804) BUTTON EVENT: Button pressed: 35[0m
+[0;33mW (571804) BUTTON EVENT: 5 presses! LED ON[0m
+����������������������������������������������������������������74364) BUTTON EVENT: Button pressed: 36
+[0;32mI (574564) BUTTON EVENT: Button pressed: 37[0m
+[0;32mI (577654) BUTTON EVENT: Button pressed: 38[0m
+[0;32mI (579964) BUTTON EVENT: Button pressed: 39[0m
+[0;32mI (579964) BUTTON EVENT: Button pressed: 40[0m
+[0;33mW (579964) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (580964) BUTTON EVENT: Button pressed: 41[0m
+[0;32mI (580964) BUTTON EVENT: Button pressed: 42[0m
+[0;32mI (583894) BUTTON EVENT: Button pressed: 43[0m
+[0;32mI (585684) BUTTON EVENT: Button pressed: 44[0m
+[0;32mI (585974) BUTTON EVENT: Button pressed: 45[0m
+[0;33mW (585974) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (586984) BUTTON EVENT: Button pressed: 46[0m
+[0;32mI (586984) BUTTON EVENT: Button pressed: 47[0m
+[0;32mI (586984) BUTTON EVENT: Button pressed: 48[0m
+[0;32mI (1570224) BUTTON EVENT: Button pressed: 49[0m
+[0;32mI (1571744) BUTTON EVENT: Button pressed: 50[0m
+[0;33mW (1571744) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1574084) BUTTON EVENT: Button pressed: 51[0m
+[0;32mI (1575774) BUTTON EVENT: Button pressed: 52[0m
+[0;32mI (1577244) BUTTON EVENT: Button pressed: 53[0m
+[0;32mI (1577374) BUTTON EVENT: Button pressed: 54[0m
+[0;32mI (1577374) BUTTON EVENT: Button pressed: 55[0m
+[0;33mW (1577374) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1578374) BUTTON EVENT: Button pressed: 56[0m
+[0;32mI (1582314) BUTTON EVENT: Button pressed: 57[0m
+[0;32mI (1585654) BUTTON EVENT: Button pressed: 58[0m
+[0;32mI (1588084) BUTTON EVENT: Button pressed: 59[0m
+[0;32mI (1588264) BUTTON EVENT: Button pressed: 60[0m
+[0;33mW (1588264) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1589264) BUTTON EVENT: Button pressed: 61[0m
+[0;32mI (1589264) BUTTON EVENT: Button pressed: 62[0m
+[0;32mI (1597564) BUTTON EVENT: Button pressed: 63[0m
+[0;32mI (1598614) BUTTON EVENT: Button pressed: 64[0m
+[0;32mI (1599174) BUTTON EVENT: Button pressed: 65[0m
+[0;33mW (1599174) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1600174) BUTTON EVENT: Button pressed: 66[0m
+[0;32mI (1600704) BUTTON EVENT: Button pressed: 67[0m
+[0;32mI (1601304) BUTTON EVENT: Button pressed: 68[0m
+[0;32mI (1601424) BUTTON EVENT: Button pressed: 69[0m
+[0;32mI (1601874) BUTTON EVENT: Button pressed: 70[0m
+[0;33mW (1601874) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1602874) BUTTON EVENT: Button pressed: 71[0m
+[0;32mI (1602874) BUTTON EVENT: Button pressed: 72[0m
+[0;32mI (1602874) BUTTON EVENT: Button pressed: 73[0m
+[0;32mI (1602874) BUTTON EVENT: Button pressed: 74[0m
+[0;32mI (1602874) BUTTON EVENT: Button pressed: 75[0m
+[0;33mW (1602874) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1603884) BUTTON EVENT: Button pressed: 76[0m
+[0;32mI (1604954) BUTTON EVENT: Button pressed: 77[0m
+[0;32mI (1606724) BUTTON EVENT: Button pressed: 78[0m
+����������������������������������������������������������������1607794) BUTTON EVENT: Button pressed: 79
+[0;32mI (1608774) BUTTON EVENT: Button pressed: 80[0m
+[0;33mW (1608774) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1609774) BUTTON EVENT: Button pressed: 81[0m
+[0;32mI (1609774) BUTTON EVENT: Button pressed: 82[0m
+[0;32mI (1609774) BUTTON EVENT: Button pressed: 83[0m
+[0;32mI (1609774) BUTTON EVENT: Button pressed: 84[0m
+[0;32mI (1609774) BUTTON EVENT: Button pressed: 85[0m
+[0;33mW (1609774) BUTTON EVENT: 5 presses! LED ON[0m
+[0;32mI (1610784) BUTTON EVENT: Button pressed: 86[0m
+[0;32mI (1610784) BUTTON EVENT: Button pressed: 87[0m
+[0;32mI (1610784) BUTTON EVENT: Button pressed: 88[0m
+[0;32mI (1610784) BUTTON EVENT: Button pressed: 89[0m
+[0;32mI (1610784) BUTTON EVENT: Button pressed: 90[0m
+[0;33mW (1610784) BUTTON EVENT: 5 presses! LED ON[0m

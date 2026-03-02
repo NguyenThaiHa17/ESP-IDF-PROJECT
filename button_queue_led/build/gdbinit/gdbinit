@@ -1,0 +1,2 @@
+source D:/ESP_IDF_PROJECT/button_queue_led/build/gdbinit/symbols
+source D:/ESP_IDF_PROJECT/button_queue_led/build/gdbinit/connect
