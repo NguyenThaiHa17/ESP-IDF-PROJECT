@@ -1,0 +1,449 @@
+Command: D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP_IDF_PROJECT\queue_2_dht_components\build\queue_2_dht_components.elf D:\ESP_IDF_PROJECT\queue_2_dht_components\build\bootloader\bootloader.elf --force-color -m 'D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools\idf.py' '-p' 'COM5'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 24 2026 21:58:54[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09fd4h ( 40916) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00019ffc vaddr=3ffb0000 size=02410h (  9232) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001c414 vaddr=40080000 size=03c04h ( 15364) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=0ffd0h ( 65488) map[0m
+[0;32mI (135) esp_image: segment 4: paddr=0002fff8 vaddr=40083c04 size=09500h ( 38144) load[0m
+[0;32mI (150) esp_image: segment 5: paddr=00039500 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (168) cpu_start: Multicore app[0m
+[0;32mI (176) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (182) app_init: Project name:     queue_2_dht_components[0m
+[0;32mI (188) app_init: App version:      d0df264-dirty[0m
+[0;32mI (192) app_init: Compile time:     Feb 24 2026 21:58:50[0m
+[0;32mI (197) app_init: ELF file SHA256:  f6cc4f193...[0m
+[0;32mI (201) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (229) heap_init: At 3FFB2CD8 len 0002D328 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008D104 len 00012EFC (75 KiB): IRAM[0m
+[0;33mW (252) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (264) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (283) main_task: Started on CPU0[0m
+[0;32mI (293) main_task: Calling app_main()[0m
+[0;32mI (313) DHT: ESP OK[0m
+
+[0;32mI (313) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (313) main_task: Returned from app_main()[0m
+[0;32mI (2333) DHT: ESP OK[0m
+
+[0;32mI (2333) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (4353) DHT: ESP OK[0m
+
+[0;32mI (4353) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (6373) DHT: ESP OK[0m
+
+[0;32mI (6373) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (8393) DHT: ESP OK[0m
+
+[0;32mI (8393) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (10413) DHT: ESP OK[0m
+
+[0;32mI (10413) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (12433) DHT: ESP OK[0m
+
+[0;32mI (12433) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (14453) DHT: ESP OK[0m
+
+[0;32mI (14453) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (16473) DHT: ESP OK[0m
+
+[0;32mI (16473) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (18493) DHT: ESP OK[0m
+
+[0;32mI (18493) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (20513) DHT: ESP OK[0m
+
+[0;32mI (20513) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (22533) DHT: ESP OK[0m
+
+[0;32mI (22533) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (24553) DHT: ESP OK[0m
+
+[0;32mI (24553) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (26573) DHT: ESP OK[0m
+
+[0;32mI (26573) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (28593) DHT: ESP OK[0m
+
+[0;32mI (28593) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (30613) DHT: ESP OK[0m
+
+[0;32mI (30613) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (32633) DHT: ESP OK[0m
+
+[0;32mI (32633) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (34653) DHT: ESP OK[0m
+
+[0;32mI (34653) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (36673) DHT: ESP OK[0m
+
+[0;32mI (36673) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (38693) DHT: ESP OK[0m
+
+[0;32mI (38693) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (40713) DHT: ESP OK[0m
+
+[0;32mI (40713) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (42733) DHT: ESP OK[0m
+
+[0;32mI (42733) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (44753) DHT: ESP OK[0m
+
+[0;32mI (44753) DHT: TEMP: 26.0 C | HUMI: 95.0 %[0m
+[0;32mI (46773) DHT: ESP OK[0m
+
+[0;32mI (46773) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (48793) DHT: ESP OK[0m
+
+[0;32mI (48793) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (50813) DHT: ESP OK[0m
+
+[0;32mI (50813) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (52833) DHT: ESP OK[0m
+
+[0;32mI (52833) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (54853) DHT: ESP OK[0m
+
+[0;32mI (54853) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (56873) DHT: ESP OK[0m
+
+[0;32mI (56873) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (58893) DHT: ESP OK[0m
+
+[0;32mI (58893) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (60913) DHT: ESP OK[0m
+
+[0;32mI (60913) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (62933) DHT: ESP OK[0m
+
+[0;32mI (62933) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (64953) DHT: ESP OK[0m
+
+[0;32mI (64953) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (66973) DHT: ESP OK[0m
+
+[0;32mI (66973) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (68993) DHT: ESP OK[0m
+
+[0;32mI (68993) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (71013) DHT: ESP OK[0m
+
+[0;32mI (71013) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (73033) DHT: ESP OK[0m
+
+[0;32mI (73033) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (75053) DHT: ESP OK[0m
+
+[0;32mI (75053) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (77073) DHT: ESP OK[0m
+
+[0;32mI (77073) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (79093) DHT: ESP OK[0m
+
+[0;32mI (79093) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (81113) DHT: ESP OK[0m
+
+[0;32mI (81113) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (83133) DHT: ESP OK[0m
+
+[0;32mI (83133) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (85153) DHT: ESP OK[0m
+
+[0;32mI (85153) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (87173) DHT: ESP OK[0m
+
+[0;32mI (87173) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (89193) DHT: ESP OK[0m
+
+[0;32mI (89193) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (91213) DHT: ESP OK[0m
+
+[0;32mI (91213) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (93233) DHT: ESP OK[0m
+
+[0;32mI (93233) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (95253) DHT: ESP OK[0m
+
+[0;32mI (95253) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (97273) DHT: ESP OK[0m
+
+[0;32mI (97273) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (99293) DHT: ESP OK[0m
+
+[0;32mI (99293) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (101313) DHT: ESP OK[0m
+
+[0;32mI (101313) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (103333) DHT: ESP OK[0m
+
+[0;32mI (103333) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (105353) DHT: ESP OK[0m
+
+[0;32mI (105353) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (107373) DHT: ESP OK[0m
+
+[0;32mI (107373) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (109393) DHT: ESP OK[0m
+
+[0;32mI (109393) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (111413) DHT: ESP OK[0m
+
+[0;32mI (111413) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (113433) DHT: ESP OK[0m
+
+[0;32mI (113433) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (115453) DHT: ESP OK[0m
+
+[0;32mI (115453) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (117473) DHT: ESP OK[0m
+
+[0;32mI (117473) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (119493) DHT: ESP OK[0m
+
+[0;32mI (119493) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (121513) DHT: ESP OK[0m
+
+[0;32mI (121513) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (123533) DHT: ESP OK[0m
+
+[0;32mI (123533) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (125553) DHT: ESP OK[0m
+
+[0;32mI (125553) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (127573) DHT: ESP OK[0m
+
+[0;32mI (127573) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (129593) DHT: ESP OK[0m
+
+[0;32mI (129593) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (131613) DHT: ESP OK[0m
+
+[0;32mI (131613) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (133633) DHT: ESP OK[0m
+
+[0;32mI (133633) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (135653) DHT: ESP OK[0m
+
+[0;32mI (135653) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (137673) DHT: ESP OK[0m
+
+[0;32mI (137673) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (139693) DHT: ESP OK[0m
+
+[0;32mI (139693) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (141713) DHT: ESP OK[0m
+
+[0;32mI (141713) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (143733) DHT: ESP OK[0m
+
+[0;32mI (143733) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (145753) DHT: ESP OK[0m
+
+[0;32mI (145753) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (147773) DHT: ESP OK[0m
+
+[0;32mI (147773) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (149793) DHT: ESP OK[0m
+
+[0;32mI (149793) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (151813) DHT: ESP OK[0m
+
+[0;32mI (151813) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (153833) DHT: ESP OK[0m
+
+[0;32mI (153833) DHT: TEMP: 28.0 C | HUMI: 95.0 %[0m
+[0;32mI (155853) DHT: ESP OK[0m
+
+[0;32mI (155853) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (157873) DHT: ESP OK[0m
+
+[0;32mI (157873) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (159893) DHT: ESP OK[0m
+
+[0;32mI (159893) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (161913) DHT: ESP OK[0m
+
+[0;32mI (161913) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (163933) DHT: ESP OK[0m
+
+[0;32mI (163933) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (165953) DHT: ESP OK[0m
+
+[0;32mI (165953) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (167973) DHT: ESP OK[0m
+
+[0;32mI (167973) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (169993) DHT: ESP OK[0m
+
+[0;32mI (169993) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (172013) DHT: ESP OK[0m
+
+[0;32mI (172013) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (174033) DHT: ESP OK[0m
+
+[0;32mI (174033) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (176053) DHT: ESP OK[0m
+
+[0;32mI (176053) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (178073) DHT: ESP OK[0m
+
+[0;32mI (178073) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (180093) DHT: ESP OK[0m
+
+[0;32mI (180093) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (182113) DHT: ESP OK[0m
+
+[0;32mI (182113) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (184133) DHT: ESP OK[0m
+
+[0;32mI (184133) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (186153) DHT: ESP OK[0m
+
+[0;32mI (186153) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (188173) DHT: ESP OK[0m
+
+[0;32mI (188173) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (190193) DHT: ESP OK[0m
+
+[0;32mI (190193) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (192213) DHT: ESP OK[0m
+
+[0;32mI (192213) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (194233) DHT: ESP OK[0m
+
+[0;32mI (194233) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (196253) DHT: ESP OK[0m
+
+[0;32mI (196253) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (198273) DHT: ESP OK[0m
+
+[0;32mI (198273) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (200293) DHT: ESP OK[0m
+
+[0;32mI (200293) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (202313) DHT: ESP OK[0m
+
+[0;32mI (202313) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (204333) DHT: ESP OK[0m
+
+[0;32mI (204333) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (206353) DHT: ESP OK[0m
+
+[0;32mI (206353) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (208373) DHT: ESP OK[0m
+
+[0;32mI (208373) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (210393) DHT: ESP OK[0m
+
+[0;32mI (210393) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (212413) DHT: ESP OK[0m
+
+[0;32mI (212413) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (214433) DHT: ESP OK[0m
+
+[0;32mI (214433) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (216453) DHT: ESP OK[0m
+
+[0;32mI (216453) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (218473) DHT: ESP OK[0m
+
+[0;32mI (218473) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (220493) DHT: ESP OK[0m
+
+[0;32mI (220493) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (222513) DHT: ESP OK[0m
+
+[0;32mI (222513) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (224533) DHT: ESP OK[0m
+
+[0;32mI (224533) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (226553) DHT: ESP OK[0m
+
+[0;32mI (226553) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (228573) DHT: ESP OK[0m
+
+[0;32mI (228573) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (230593) DHT: ESP OK[0m
+
+[0;32mI (230593) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (232613) DHT: ESP OK[0m
+
+[0;32mI (232613) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (234633) DHT: ESP OK[0m
+
+[0;32mI (234633) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (236653) DHT: ESP OK[0m
+
+[0;32mI (236653) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (238673) DHT: ESP OK[0m
+
+[0;32mI (238673) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (240693) DHT: ESP OK[0m
+
+[0;32mI (240693) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (242713) DHT: ESP OK[0m
+
+[0;32mI (242713) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (244733) DHT: ESP OK[0m
+
+[0;32mI (244733) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (246753) DHT: ESP OK[0m
+
+[0;32mI (246753) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (248773) DHT: ESP OK[0m
+
+[0;32mI (248773) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (250793) DHT: ESP OK[0m
+
+[0;32mI (250793) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (252813) DHT: ESP OK[0m
+
+[0;32mI (252813) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (254833) DHT: ESP OK[0m
+
+[0;32mI (254833) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (256853) DHT: ESP OK[0m
+
+[0;32mI (256853) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (258873) DHT: ESP OK[0m
+
+[0;32mI (258873) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
+[0;32mI (260893) DHT: ESP OK[0m
+
+[0;32mI (260893) DHT: TEMP: 27.0 C | HUMI: 95.0 %[0m
