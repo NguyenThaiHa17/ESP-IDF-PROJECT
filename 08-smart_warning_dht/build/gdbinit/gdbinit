@@ -1,0 +1,2 @@
+source D:/ESP_IDF_PROJECT/08-smart_warning_dht/build/gdbinit/symbols
+source D:/ESP_IDF_PROJECT/08-smart_warning_dht/build/gdbinit/connect
