@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "D:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/freertos/FreeRTOS-Kernel-SMP/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json"
+            ]
+        }
+    ],
+    "version": 4
+}

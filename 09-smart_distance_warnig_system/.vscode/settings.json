@@ -1,0 +1,7 @@
+{
+  "includePath": [
+    "${workspaceFolder}/**",
+    "D:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/**"
+  ],
+  "idf.currentSetup": "D:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/"
+}
