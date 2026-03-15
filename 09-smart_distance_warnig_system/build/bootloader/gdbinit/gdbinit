@@ -1,2 +1,2 @@
-source D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader/gdbinit/symbols
-source D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader/gdbinit/connect
+source D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader/gdbinit/symbols
+source D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader/gdbinit/connect

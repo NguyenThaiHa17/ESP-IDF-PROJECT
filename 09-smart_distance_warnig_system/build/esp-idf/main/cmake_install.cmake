@@ -1,4 +1,4 @@
-# Install script for directory: D:/ESP_IDF_PROJECT/smart_distance_warnig_system/main
+# Install script for directory: D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader/bootloader.elf
+    add-symbol-file D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/smart_distance_warnig_system.elf
+file D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/smart_distance_warnig_system.elf

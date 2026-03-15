@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: D:\ESP_IDF_PROJECT\smart_distance_warnig_system\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: D:\ESP_IDF_PROJECT\09-smart_distance_warnig_system\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

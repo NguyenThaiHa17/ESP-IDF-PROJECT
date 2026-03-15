@@ -10,18 +10,18 @@ if(NOT EXISTS "D:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/bootloa
   file(MAKE_DIRECTORY "D:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader"
-  "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix"
-  "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix/tmp"
-  "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix/src"
-  "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader"
+  "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix"
+  "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix/tmp"
+  "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix/src"
+  "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/ESP_IDF_PROJECT/smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/ESP_IDF_PROJECT/09-smart_distance_warnig_system/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

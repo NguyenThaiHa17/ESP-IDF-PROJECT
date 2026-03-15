@@ -1,0 +1,188 @@
+Command: D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP_IDF_PROJECT\09-smart_distance_warnig_system\build\smart_distance_warnig_system.elf D:\ESP_IDF_PROJECT\09-smart_distance_warnig_system\build\bootloader\bootloader.elf --force-color -m 'D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools\idf.py' '-p' 'COM5'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6384
+load:0x40078000,len:15916
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  9 2026 16:51:58[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v3.1[0m
+[0;32mI (33) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (70) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b1a8h ( 45480) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001b1d0 vaddr=3ffb0000 size=02430h (  9264) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001d608 vaddr=40080000 size=02a10h ( 10768) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14ec0h ( 85696) map[0m
+[0;32mI (143) esp_image: segment 4: paddr=00034ee8 vaddr=40082a10 size=0bb1ch ( 47900) load[0m
+[0;32mI (162) esp_image: segment 5: paddr=00040a0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (170) boot: Disabling RNG early entropy source...[0m
+[0;32mI (180) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (191) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     smart_distance_warnig_system[0m
+[0;32mI (200) app_init: App version:      eead469-dirty[0m
+[0;32mI (205) app_init: Compile time:     Mar  9 2026 16:51:42[0m
+[0;32mI (210) app_init: ELF file SHA256:  1b7c63109...[0m
+[0;32mI (214) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (223) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (227) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (242) heap_init: At 3FFB2D08 len 0002D2F8 (180 KiB): DRAM[0m
+[0;32mI (247) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (253) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (258) heap_init: At 4008E52C len 00011AD4 (70 KiB): IRAM[0m
+[0;33mW (265) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (277) spi_flash: detected chip: generic[0m
+[0;32mI (280) spi_flash: flash io: dio[0m
+[0;33mW (283) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (295) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+Dang kiem tra LCD...
+[1;31mE (2486) i2c: i2c driver install error[0m
+[0;32mI (2486) main_task: Returned from app_main()[0m
+Dist: 190 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 86 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 82 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 189 cm -> SAFE
+Dist: 86 cm -> SAFE
+Dist: 83 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 82 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 190 cm -> SAFE
+Dist: 86 cm -> SAFE
+Dist: 85 cm -> SAFE
+Dist: 189 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 97 cm -> SAFE
+Dist: 167 cm -> SAFE
+Dist: 90 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 86 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 82 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 85 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 92 cm -> SAFE
+Dist: 164 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 164 cm -> SAFE
+Dist: 166 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 83 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 85 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 74 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 77 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 78 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 10.45 cm -> DANGER
+Dist: 81 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 6.19 cm -> DANGER
+Dist: 6.17 cm -> DANGER
+Dist: 6.19 cm -> DANGER
+Dist: 6.19 cm -> DANGER
+Dist: 6.19 cm -> DANGER
+Dist: 80 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 81 cm -> SAFE
+Dist: 11.39 cm -> DANGER
+Dist: 79 cm -> SAFE
+Dist: 13.80 cm -> DANGER
+Dist: 90 cm -> SAFE
+Dist: 91 cm -> SAFE
+Dist: 90 cm -> SAFE
+Dist: 94 cm -> SAFE
+Dist: 89 cm -> SAFE
+Dist: 162 cm -> SAFE
+Dist: 80 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 75 cm -> SAFE
+Dist: 76 cm -> SAFE
+Dist: 165 cm -> SAFE
+Dist: 79 cm -> SAFE
+Dist: 84 cm -> SAFE
+Dist: 12.41 cm -> DANGER
+Dist: 13.24 cm -> DANGER
+Dist: 15.57 cm -> DANGER
+Dist: 84 cm -> SAFE
+Dist: 1002 cm -> SAFE
+Dist: 165 cm -> SAFE
+Dist: 17.15 cm -> DANGER
+Dist: 533 cm -> SAFE
+Dist: 15.86 cm -> DANGER
+Dist: 15.84 cm -> DANGER
+Dist: 15.83 cm -> DANGER
+Dist: 16.22 cm -> DANGER
+Dist: 16.24 cm -> DANGER
+Dist: 92 cm -> SAFE
+Dist: 92 cm -> SAFE
+Dist: 531 cm -> SAFE
+Dist: 90 cm -> SAFE
+Dist: 95 cm -> SAFE
+Dist: 14.74 cm -> DANGER
+Dist: 15.76 cm -> DANGER
+Dist: 16.12 cm -> DANGER

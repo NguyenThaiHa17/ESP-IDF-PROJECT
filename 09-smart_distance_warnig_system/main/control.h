@@ -1,6 +1,5 @@
 #ifndef CONTROL_H
 #define CONTROL_H
 
-void control_task(void *pvParameters);
-
+void control_task(void*pvParameters);
 #endif
