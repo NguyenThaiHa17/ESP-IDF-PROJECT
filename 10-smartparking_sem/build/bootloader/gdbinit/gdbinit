@@ -1,0 +1,2 @@
+source D:/ESP_IDF_PROJECT/10-smartparking_sem/build/bootloader/gdbinit/symbols
+source D:/ESP_IDF_PROJECT/10-smartparking_sem/build/bootloader/gdbinit/connect

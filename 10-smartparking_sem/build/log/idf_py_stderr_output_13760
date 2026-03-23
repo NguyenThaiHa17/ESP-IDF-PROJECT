@@ -1,0 +1,41 @@
+Command: D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP_IDF_PROJECT\10-smartparking_sem\build\10-smartparking_sem.elf D:\ESP_IDF_PROJECT\10-smartparking_sem\build\bootloader\bootloader.elf --force-color -m 'D:\ESP-IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP-IDF\Espressif\frameworks\esp-idf-v5.5.2\tools\idf.py' '-p' 'COM5'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d72b2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d7674: [0;33mtask_wdt_isr[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082921: [0;33m_xt_lowint1[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d622c: [0;33mgpio_get_level[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m246[0m
+[0m--- 0x400d6059: [0;33mdistance_measure[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d60b3: [0;33msend_task[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m39[0m
+[0m--- 0x40085db1: [0;33mvPortTaskWrapper[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d72b2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d7674: [0;33mtask_wdt_isr[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082921: [0;33m_xt_lowint1[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6059: [0;33mdistance_measure[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d60b3: [0;33msend_task[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m39[0m
+[0m--- 0x40085db1: [0;33mvPortTaskWrapper[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d72b2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d7674: [0;33mtask_wdt_isr[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082921: [0;33m_xt_lowint1[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6231: [0;33mgpio_get_level[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m247[0m
+[0m--- 0x400d6059: [0;33mdistance_measure[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d60b3: [0;33msend_task[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m39[0m
+[0m--- 0x40085db1: [0;33mvPortTaskWrapper[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d72b2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d7674: [0;33mtask_wdt_isr[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082921: [0;33m_xt_lowint1[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6059: [0;33mdistance_measure[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d60b3: [0;33msend_task[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m39[0m
+[0m--- 0x40085db1: [0;33mvPortTaskWrapper[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x400d72b2: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x400d7674: [0;33mtask_wdt_isr[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x40082921: [0;33m_xt_lowint1[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400d6231: [0;33mgpio_get_level[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m247[0m
+[0m--- 0x400d6059: [0;33mdistance_measure[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d60b3: [0;33msend_task[0m[0m at [0;32mD:/ESP_IDF_PROJECT/10-smartparking_sem/main/10-smartparking_sem.c[0m[0m:[1;31m39[0m
+[0m--- 0x40085db1: [0;33mvPortTaskWrapper[0m[0m at [0;32mD:/ESP-IDF/Espressif/frameworks/esp-idf-v5.5.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m
